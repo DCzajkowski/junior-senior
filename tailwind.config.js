@@ -3,10 +3,13 @@ module.exports = {
   purge: ['./src/**/*.{ts,tsx}'],
   darkMode: 'media',
   theme: {
-    extend: {},
+    extend: {
+      borderWidth: {
+        3: '3px',
+      },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 }
